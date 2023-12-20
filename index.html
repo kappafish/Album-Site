@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <link href ='styles.css' rel ='stylesheet'>
+    <style>
+        @font-face { font-family: Inter; src: url('https://fonts.google.com/specimen/Inter');  }
+    </style>
+    <script src="scripts.js"></script>
+</head>
+<body>
+<div class = 'nav'>
+    <div id = 'nav-items'>
+        <button class = 'nav-button' id = 'home-button' onclick="scrollToTop()">HOME</button>
+        <button class = 'nav-button' id = 'tracklist-button' onclick ="scrollToBottom()">MEDIA PLAYER</button>
+    </div>
+</div>
+    <div class = 'tracker-bar'>
+        <div class = 'marker1'></div>
+        <div class = 'content'></div>
+        <div class = 'content'></div>
+        <div class = 'content'></div>
+        <div class = 'content'></div>
+        <div class = 'content'></div>
+        <div class = 'marker2'></div>
+        <div class = 'album-img'>
+            <img id = 'album-mockup' src = 'imgs/Vinyl%20Record%20PSD%20MockUp.png' alt ='Album Cover Mockup'>
+        </div>
+        <div class = 'large-spacing'></div>
+        <div class = 'large-spacing'></div>
+        <div class = 'large-spacing'></div>
+        <div class = 'large-spacing'></div>
+        <div class = 'large-spacing'></div>
+        <div class = 'large-spacing'></div>
+        <div class = 'trigger reveal'></div>
+        <div class = 'trigger reveal'></div>
+        <div class = 'trigger reveal'></div>
+        <div class = 'trigger reveal'></div>
+        <div class = 'marker3'></div>
+        <div class = 'title-container reveals-img'>
+            <div class = track-container>
+                <button class = 'left-arrow-button' id = 'left-arrow' onclick="leftBtnClick()"></button>
+                <h1 class = 'fade-in-text'>TRACK <span id = "track-number">1</span></h1>
+                <button class = 'right-arrow-button' id = 'right-arrow' onclick="rightBtnClick()"></button>
+            </div>
+            <div class = 'small-spacing'></div>
+            <h2 class = 'fade-in-text' id = 'track-title'>COMING OF AGE</h2>
+            <div class = 'small-spacing'></div>
+            <div class = 'small-spacing'></div>
+            <div class = 'small-spacing'></div>
+            <div class = 'small-spacing'></div>
+            <div class = 'play-pause-container'>
+                <button id = 'play-button' onclick="playAudio()"></button>
+                <button id = 'pause-button' onclick="stopAudio()"></button>
+            </div>
+        </div>
+        <div class = 'large-spacing'></div>
+
+    </div>
+
+    <div class = 'wrapper'>
+        <img class = 'fade-out' id = 'pg1img1' src = 'imgs/durry-20220627texuted.png' alt = 'durry duo'>
+        <img class = 'fade-out' id = 'pg1img2' src = 'imgs/brother-sister-duo-Durry2textuyred%201.png' alt = 'Sister Picture'>
+        <img class = 'fade-out' id = 'pg1img3' src = 'imgs/Not-laughing2textured.png' alt = 'Brother Picture'>
+        <div class = 'large-spacing'></div>
+        <div class = 'title-container fade-out'>
+            <h1 class = 'fade-in-text'>DURRY</h1>
+            <div class = 'small-spacing'></div>
+            <h2 class = 'fade-in-text'>SUBURBAN LEGEND</h2>
+            <div id = 'down-icon-container'>
+                <img class = 'fade-out' id = 'pg1img4' src = 'imgs/leftarrow.png' alt ='scroll down icon'>
+            </div>
+        </div>
+        <img class = 'reveals-img' id = 'pg2img1' src = 'imgs/2textured.png' alt = 'brother photo'>
+        <img class = 'reveals-img' id = 'pg2img2' src = 'imgs/Not-laughingtextuyred%202.png' alt = 'sister photo'>
+        <img class = 'reveals-img' id = 'pg2img3' src = 'imgs/Digital+cover+art+final+(1)%201.png' alt = 'House'>
+    </div>
+</body>
+</html>

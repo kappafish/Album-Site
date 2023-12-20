@@ -1,0 +1,346 @@
+html {
+    font-size: 10px;
+}
+.small-spacing {
+    height: 1rem;
+}
+.large-spacing {
+    height:  30rem;
+}
+.med-spacing {
+    height: 15rem;
+}
+.wrapper {
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: #FBBA46;
+    z-index: 1;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 10;
+    position: fixed;
+    top: 4rem;
+    height: 6rem;
+    margin: 0 auto;
+    width: 100vw;
+}
+#nav-items {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8rem;
+    margin: 0 auto;
+}
+.nav-button {
+    text-decoration: none;
+    border: none;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: 4rem;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    background-color: transparent;
+}
+.nav-button:hover {
+    color: #ececec;
+}
+
+.title-container {
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    z-index: 2;
+}
+.title-container h1 {
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+    font-size: 25rem;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+.title-container h2 {
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+    font-size: 6rem;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+#pg1img1 {
+    position: absolute;
+    z-index: 1.5;
+    rotate: 45deg;
+    top: -7rem;
+    left: -26rem;
+    height: 1080px;
+    width: 1080px;
+}
+#pg1img2 {
+    position: absolute;
+    z-index: 1.5;
+    top: 1rem;
+    right: 0;
+    width: 428px;
+    height: 605px;
+}
+#pg1img3 {
+    position: absolute;
+    z-index: 1.5;
+    bottom: -20rem;
+    right: -10rem;
+
+}
+#pg1img4 {
+    margin-top: 5rem;
+    rotate: -90deg;
+}
+#down-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+#pg2img1 {
+    position: absolute;
+    z-index: 1.5;
+    rotate: 45deg;
+    top: -7rem;
+    left: -26rem;
+    width: 650px;
+    height: 929px;
+}
+#pg2img2 {
+    position: absolute;
+    z-index: 1.5;
+    bottom: -5rem;
+    right: -2rem;
+}
+#pg2img3 {
+    position: absolute;
+    z-index: 1.5;
+    bottom: -1rem;
+    left: 0;
+
+}
+
+/*.fade-in-text {*/
+/*    opacity: 0;*/
+/*    animation: fadeIn 2s forwards; !* 2s duration, forwards to keep the final state *!*/
+/*    animation-delay: 1s;*/
+/*}*/
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeInSlideLeft {
+    from {
+        opacity: 0;
+        transform:translateX(80px);
+    }
+    to {
+        opacity: 1;
+        transform:translateX(0);
+    }
+}
+
+@keyframes fadeInSlideRight {
+    from {
+        opacity: 0;
+        transform:translateX(-80px);
+    }
+    to {
+        opacity: 1;
+        transform:translateX(0);
+    }
+}
+
+.tracker-bar {
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+.content {
+    /*border-color: purple;*/
+    /*border-style: solid;*/
+    height: 0.1rem;
+    width: 80rem;
+    margin-bottom: 0;
+}
+.trigger {
+    width: 80rem;
+    height: 0.1rem;
+    /*border-color: purple;*/
+    /*border-style: solid;*/
+}
+.marker1 {
+    /*border-color: #c23fc2;*/
+    /*border-style: solid;*/
+    height: 150vh;
+    width: 80rem;
+    margin-bottom: 10rem;
+}
+.marker2 {
+    /*border-color: #c23fc2;*/
+    /*border-style: solid;*/
+    height: 100vh;
+    width: 80rem;
+    margin-bottom: 10rem;
+}
+.marker3 {
+    /*border-color: #c23fc2;*/
+    /*border-style: solid;*/
+    height:50vh;
+    width: 80rem;
+    margin-bottom: 10rem;
+}
+.fade-out {
+    opacity: 0;
+}
+.fade-in {
+    opacity: 0;
+}
+.hidden {
+    animation: fadeOut 1s forwards;
+}
+.beginning {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    animation-delay: 0.5s;
+}
+.album-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.album-img img{
+    width: 70%;
+    height: 70%;
+}
+
+.reveals-img{
+    position: relative;
+    opacity: 0;
+    transition: 1.5s all ease;
+}
+
+.reveals-img.active{
+    opacity: 1;
+}
+
+.track-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.track-container h1 {
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+    font-size: 15rem;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+.right-arrow-button {
+    background-image: url("imgs/rightarrow.png");
+    background-repeat: no-repeat;
+    text-decoration: none;
+    background-color: transparent;
+    border-style: hidden;
+    cursor: pointer;
+    height: 80px;
+    width: 50px;
+    margin: 0 0 0 10rem;
+}
+.right-arrow-button:hover {
+    opacity: 0.8;
+}
+
+.left-arrow-button {
+    background-image: url("imgs/leftarrow.png");
+    background-repeat: no-repeat;
+    text-decoration: none;
+    background-color: transparent;
+    border-style: hidden;
+    cursor: pointer;
+    height: 80px;
+    width: 50px;
+    margin: 0 10rem 0 0;
+}
+.left-arrow-button:hover {
+    opacity: 0.8;
+}
+.play-pause-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#play-button {
+    background-image: url("imgs/playbutton.png");
+    background-repeat: no-repeat;
+    text-decoration: none;
+    background-color: transparent;
+    border-style: hidden;
+    cursor: pointer;
+    margin: 0 auto;
+    height: 180px;
+    width: 180px;
+}
+#play-button:hover {
+    opacity: 0.8;
+}
+#pause-button {
+    display: none;
+    background-image: url("imgs/pausebutton.png");
+    background-repeat: no-repeat;
+    text-decoration: none;
+    background-color: transparent;
+    border-style: hidden;
+    cursor: pointer;
+    margin: 0 auto;
+    height: 180px;
+    width: 180px;
+}
+#pause-button:hover {
+    opacity: 0.8;
+}
